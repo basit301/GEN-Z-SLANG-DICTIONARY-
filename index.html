@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Z Dictionary</title>
+    <link rel="stylesheet" href="GEN-Z.css">
+</head>
+<!-- color:
+Deep purple (#2C0E4A)
+lime accent (#C7FF00)
+off-white background (#FAFAFB) 
+charcoal text (#222) 
+-->
+<style>
+
+</style>
+
+<body>
+    <section class="top">
+        <div class="container">
+            <header class="hero">
+                <h1>Learn Gen Z Slang — Fast ⚡</h1>
+                <p class="subtagline">From “rizz” to “bet,” get the vibes and meanings instantly.</p>
+
+                <div class="search">
+                    <input placeholder="Search terms e.g. rizz, drip" />
+                    <button>Search</button>
+                </div>
+    </section>
+
+    <section class="mid">
+    </section>
+    <div style="text-align:center; margin-top:20px;">
+        <button id="toggleBtn" style="
+            padding:10px 20px;
+            background:black;
+            color:#ddd;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:1rem;">
+            View All
+        </button>
+    </div>
+
+
+    <section class="bottom">
+        <div class="contributer-leaderboard">
+            <h2>Top Contributers</h2>
+            <ol>
+                <li>Alice - 15 terms added</li>
+                <li>Bob - 12 terms added</li>
+                <li>Charlie - 10 terms added</li>
+                <li>Peter - 7 terms added</li>
+                <li>Oli - 2 terms added</li>
+            </ol>
+        </div>
+
+        <div class="submit-term">
+            <h2>💡 Submit a New Term</h2>
+            <form id="termForm" action="https://formspree.io/f/mldpqvpb" method="POST">
+                <input type="text" name="term" id="term" placeholder="Term" required>
+                <input type="text" name="definition" id="definition" placeholder="Definition" required>
+                <input type="text" name="tags" id="tags" placeholder="Tags (comma separated)">
+                <input type="text" name="Contributer" id="Contributer" placeholder="Your Name" required>
+
+                <input type="hidden" name="source" value="Gen Z Slang Website">
+
+                <input type="hidden" name="_redirect" value="https://yourdomain.com/thanks.html">
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="FOOTER">
+        <footer class="footer">
+            <div class="footer-container">
+                <p class="tagline">⚡ Stay Lit, Keep Slanging ⚡</p>
+
+                <nav class="footer-nav">
+                    <a href="#">Home</a>
+                    <a href="#">Dictionary</a>
+                    <a href="#">Leaderboard</a>
+                    <a href="#">Submit</a>
+                </nav>
+
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <p class="copy">&copy; <span id="year"></span> Gen-Z Slang. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <script>
+            // Auto-update year
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </section>
+
+
+    <script src="GEN-Z.js"></script>
+</body>
+
+</html>
